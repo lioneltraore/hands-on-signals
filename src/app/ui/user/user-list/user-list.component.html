@@ -1,0 +1,11 @@
+@if (users().length) {
+  <div class="card-body">
+    <div class="list-group">
+      @for (user of users(); track $index) {
+        <button type="button" [ngClass]="{'active': user?.id === selectedUserID()}" (click)="onSelectedUser(user.id)" class="list-group-item">
+          {{ user.name }}
+        </button>
+      }
+    </div>
+  </div>
+}

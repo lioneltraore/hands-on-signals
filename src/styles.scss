@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: sans-serif;
+}
+
+.active {
+  background-color: skyblue !important;
+}
+
+.card {
+  border: solid 1px #e0e0e0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: fit-content;
+
+  button {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      border-bottom: solid 1px #e0e0e0;
+    }
+  }
+
+  &-header {
+    padding: 1rem;
+    background-color: #e7e7e7;
+  }
+
+  &-body {
+    padding: 1rem;
+
+    .list-group {
+      display: flex;
+      flex-direction: column;
+      width: 280px;
+      border: solid 1px #e0e0e0;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+  }
+}
