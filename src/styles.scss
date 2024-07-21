@@ -4,6 +4,16 @@
   font-family: sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  height: 500px;
+  overflow: hidden;
+}
+
+.user-todos {
+  margin-left: 1.5rem;
+}
+
 .active {
   background-color: #0d99ff !important;
   color: #fff !important;

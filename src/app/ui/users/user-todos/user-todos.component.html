@@ -1,1 +1,16 @@
-<p>user-todos works!</p>
+<div class="card">
+  <div class="card-header">{{ pageTitle() }}</div>
+  <div class="card-body">
+    @for (task of userTasks(); track $index) {
+      <div class="row">
+        <div class="col">{{ task.title }}</div>
+        <div class="col">{{ task.completed }}</div>
+        <div class="col">
+          @if (!task.completed) {
+            <button type="button" (click)="markComplete(task)">Mark as completed</button>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>

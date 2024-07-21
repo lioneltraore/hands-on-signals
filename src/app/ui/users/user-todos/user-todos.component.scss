@@ -1,0 +1,28 @@
+button {
+  background-color: #0d99ff;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  padding: 0.5rem 2rem;
+}
+
+.card-body {
+  height: 414px;
+  overflow: scroll;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 420px 96px 220px;
+  border-bottom: dashed 1px #e0e0e0;
+  margin-bottom: 0.8rem;
+  // padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  .col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+  }
+}
